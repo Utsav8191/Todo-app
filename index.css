@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --body-bg-color: #2061cb;
+  --container-bg-color: white;
+  --primary-font-family:  'DM Sans', sans-serif;  
+}
+body {
+  height: 100vh;
+  background-color: var(--body-bg-color);
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.title-text {
+  font-size: 2.4rem;
+  color: white;
+  font-family: var(--primary-font-family);
+}
+.container {
+  width: 30%;
+  height: 75%;
+  justify-content: flex-start;
+  border-radius: .8rem;
+  background-color: var(--container-bg-color);
+  border: 2px solid rgb(255, 255, 255);
+}
+.input-section {
+  width: 100%;
+  height: 20%;
+  flex-direction: row;
+  justify-content: space-evenly;  
+  /* border: 2px dashed rgb(100, 94, 94); */
+}
+#add-task {
+  width: 65%;
+  height: 2rem;
+  border-radius: .3rem;
+  padding: 0px 3px;
+  font-family: var(--primary-font-family);
+  border: 2px solid rgb(24, 104, 209);
+}
+#add-task:focus {
+  outline: none;
+}
+.add-btn {
+  color: white;
+  border: none;
+  font-family: var(--primary-font-family);
+  font-size: .8rem;
+  border-radius: 4px;
+  background-color: rgb(15, 95, 201);
+  padding: .5rem 1.3rem;
+}
+.task-list-section {
+  width: 100%;
+  height: 80%;
+  /* border: 2px dashed rgb(100, 94, 94); */
+}
+#task-list {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+#task-list li {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-radius: 4px; */
+  margin-top: .2rem;
+  background-color: #dbe4ff;
+  /* border: 2px solid rgb(31, 33, 46); */
+}
+.custom-checkbox {
+  margin: 0rem .2rem;
+}
+
+.label {
+  font-size: 1rem;
+  padding: 0px 4px 0 8px;
+  font-family: var(--primary-font-family);
+}
+.delete-btn {
+  color: white;
+  font-size: .6rem;
+  padding: 8px 12px;
+  margin: 4px;
+  border-radius: 4px;
+  background-color: rgb(15, 95, 201);
+  border: none;
+}
